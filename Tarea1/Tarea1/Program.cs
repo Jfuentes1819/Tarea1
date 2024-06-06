@@ -3,6 +3,7 @@ using System.Reflection.PortableExecutable;
 
 Console.WriteLine("Hello, World!");
 
+// debo cambiar todas las variables a ingles
 int edad1 = 28;
 decimal estaturaMetros = 1.75m;
 string nombreCompleto = "Juan Perez";
