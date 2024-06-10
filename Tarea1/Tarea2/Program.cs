@@ -11,7 +11,7 @@ decimal age = Convert.ToDecimal(Console.ReadLine());
 Console.WriteLine("Porfavor ingrese su altura en centimetros.");
 float height = Console.Read();
 
-if (age <= 17 && height <= 1.50)
+if (age <= 17 && height <= 1.50f)
 {
     Console.WriteLine("Usted no es eligible para unirte al equipo de baseball.");
 
@@ -77,6 +77,33 @@ else if (calificacion <= 59 )
     Console.WriteLine("\nSu nota es F.");
 }
     Console.ReadKey();
+
+
+Console.WriteLine("\nIngresa su calificación numérica.");
+decimal grade = Convert.ToInt32(Console.ReadLine());
+
+
+switch (grade)
+{
+    case var g when (g >=90):
+        Console.WriteLine("\nSu nota es A.");
+        break;
+    case var g when (g <= 89 && g >= 80):
+        Console.WriteLine("\nSu nota es B.");
+        break;
+    case var g when (g <= 79 && g >= 70):
+        Console.WriteLine("\nSu nota es C.");
+        break;
+    case var g when (g <= 69 && g >= 60):
+        Console.WriteLine("\nSu nota es D.");
+        break;
+    case var g when (g <= 59):
+        Console.WriteLine("\nSu nota es F.");
+        break;
+
+    default:
+        break;
+}
 
 
 
